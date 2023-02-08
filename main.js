@@ -51,10 +51,10 @@ function addStar() {
 
 Array(200).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load("public/spaceTexture.jpg");
+const spaceTexture = new THREE.TextureLoader().load("images/spaceTexture.jpg");
 scene.background = spaceTexture;
 
-const myselfTexture = new THREE.TextureLoader().load("public/myself.jpg");
+const myselfTexture = new THREE.TextureLoader().load("images/myself.jpg");
 const myself = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({ map: myselfTexture })
@@ -65,7 +65,7 @@ myself.position.z = -5;
 
 scene.add(myself);
 
-const jsLogoTexture = new THREE.TextureLoader().load("public/jsLogo.png");
+const jsLogoTexture = new THREE.TextureLoader().load("images/jsLogo.png");
 const jsLogo = new THREE.Mesh(
   new THREE.BoxGeometry(1, 1, 1),
   new THREE.MeshBasicMaterial({ map: jsLogoTexture })
@@ -76,7 +76,7 @@ jsLogo.position.z = 0;
 
 scene.add(jsLogo);
 
-const htmlLogoTexture = new THREE.TextureLoader().load("public/htmlLogo.png");
+const htmlLogoTexture = new THREE.TextureLoader().load("images/htmlLogo.png");
 const htmlLogo = new THREE.Mesh(
   new THREE.BoxGeometry(1, 1, 1),
   new THREE.MeshBasicMaterial({ map: htmlLogoTexture })
@@ -87,7 +87,7 @@ htmlLogo.position.z = 0;
 
 scene.add(htmlLogo);
 
-const cssLogoTexture = new THREE.TextureLoader().load("public/cssLogo.png");
+const cssLogoTexture = new THREE.TextureLoader().load("images/cssLogo.png");
 const cssLogo = new THREE.Mesh(
   new THREE.BoxGeometry(1, 1, 1),
   new THREE.MeshBasicMaterial({ map: cssLogoTexture })
@@ -98,9 +98,9 @@ cssLogo.position.z = 0;
 
 scene.add(cssLogo);
 
-const earthTexture = new THREE.TextureLoader().load("public/worldColour.jpg");
+const earthTexture = new THREE.TextureLoader().load("images/worldColour.jpg");
 const earthNormalTexture = new THREE.TextureLoader().load(
-  "public/earth_normalmap.jpg"
+  "images/earth_normalmap.jpg"
 );
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(1, 32, 32),
@@ -115,9 +115,9 @@ earth.position.z = 9;
 
 scene.add(earth);
 
-const moonTexture = new THREE.TextureLoader().load("public/moonTexture.jpg");
+const moonTexture = new THREE.TextureLoader().load("images/moonTexture.jpg");
 const moonNormalTexture = new THREE.TextureLoader().load(
-  "public/moonNormal.jpg"
+  "images/moonNormal.jpg"
 );
 
 const moon = new THREE.Mesh(
@@ -133,7 +133,7 @@ moon.position.z = 18;
 
 scene.add(moon);
 
-const venusTexture = new THREE.TextureLoader().load("public/venus.jpg");
+const venusTexture = new THREE.TextureLoader().load("images/venus.jpg");
 
 const venus = new THREE.Mesh(
   new THREE.SphereGeometry(1, 32, 32),
